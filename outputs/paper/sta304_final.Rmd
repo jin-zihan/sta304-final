@@ -1,5 +1,5 @@
 ---
-title: "Suggestion of School Goodness: Average SAT admission score by institutional characteristics"
+title: "Suggestion of School Goodness: Average SAT admission score by institutional characteristics ^[https://github.com/jin-zihan/sta304-final.git]"
 author: "Zihan Jin"
 date: "4/25/2022"
 output:
@@ -20,7 +20,7 @@ library(car)
 
 
 ```{r, include=FALSE}
-college <- read_csv("/Users/zihan/Desktop/STA304_paper/inputs/data/Most-Recent-Cohorts-Institution.csv")
+college <- read_csv("/Users/zihan/Desktop/STA304/inputs/data/Most-Recent-Cohorts-Institution.csv")
 ```
 
 ```{r, include=FALSE, warning=FALSE}
@@ -1009,7 +1009,7 @@ According to the model, we can conclude that
 
 ```{r, include = FALSE}
 # import raw data
-df <- read_csv("/Users/zihan/Desktop/STA304_paper/inputs/data/Most-Recent-Cohorts-Institution.csv")
+df <- read_csv("/Users/zihan/Desktop/STA304/inputs/data/Most-Recent-Cohorts-Institution.csv")
 df <- df %>%
   select(SAT_AVG,C150_4_WHITE, C150_4_BLACK, C150_4_HISP, C150_4_ASIAN, C150_4_AIAN, C150_4_NHPI, TUITIONFEE_IN, TUITIONFEE_OUT, UGDS_WHITE, UGDS_BLACK, UGDS_HISP,UGDS_ASIAN, UGDS_AIAN, UGDS_NHPI, MD_EARN_WNE_P6, MD_EARN_WNE_P8, MD_EARN_WNE_P10, CONTROL, AANAPII, HBCU, PBI)
 ```
